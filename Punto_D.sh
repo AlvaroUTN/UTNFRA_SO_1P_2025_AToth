@@ -2,4 +2,6 @@
 
 sudo mkdir -p /Punto_D/{Libros,Musica,Videos}/{elemento}
 
-sudo tree Punto_D.sh
+whoami | sudo tee /Punto_D/{Libros,Musica,Videos}/elemento/salida_whoami.txt
+
+
