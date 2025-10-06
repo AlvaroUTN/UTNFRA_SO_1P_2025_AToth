@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo fdisk /dev/sdc << EOF
+DISCO=$(sudo fdisk -l | grep "8 GIB" | awk '{print $2}' | awk -F ':' '{print $1}')
+
+sudo fdisk $DISCO << EOF
 
 n
 p
