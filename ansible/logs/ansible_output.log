@@ -1,0 +1,36 @@
+2025-11-17 20:56:56,595 p=3617 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-17 20:56:57,247 p=3617 u=vagrant n=ansible | PLAY [testing,produccion] *************************************************************************************************************
+2025-11-17 20:56:57,289 p=3617 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2025-11-17 20:56:58,253 p=3617 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2025-11-17 20:57:00,494 p=3617 u=vagrant n=ansible | ok: [localhost]
+2025-11-17 20:57:00,531 p=3617 u=vagrant n=ansible | TASK [include_role : TP_INI] **********************************************************************************************************
+2025-11-17 20:57:00,672 p=3617 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] *****************************************************************************
+2025-11-17 20:57:00,714 p=3617 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2025-11-17 20:57:00,735 p=3617 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2025-11-17 20:57:00,759 p=3617 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2025-11-17 20:57:00,800 p=3617 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2025-11-17 20:57:00,801 p=3617 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 20:57:00,803 p=3617 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 20:59:56,102 p=3728 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-17 20:59:56,530 p=3728 u=vagrant n=ansible | PLAY [testing,produccion] *************************************************************************************************************
+2025-11-17 20:59:56,562 p=3728 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2025-11-17 20:59:57,208 p=3728 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2025-11-17 20:59:59,119 p=3728 u=vagrant n=ansible | ok: [localhost]
+2025-11-17 20:59:59,155 p=3728 u=vagrant n=ansible | TASK [include_role : TP_INI] **********************************************************************************************************
+2025-11-17 20:59:59,253 p=3728 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] *****************************************************************************
+2025-11-17 20:59:59,301 p=3728 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2025-11-17 20:59:59,323 p=3728 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2025-11-17 20:59:59,352 p=3728 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2025-11-17 20:59:59,392 p=3728 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2025-11-17 20:59:59,395 p=3728 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 20:59:59,395 p=3728 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
